@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>자바스크립트</title>
+</head>
+<body>
+	<h1 id="head" style="color='blue';" onclick="changeColor()">자바스크립트</h1>
+	<p style="color='gray';">위 텍스트를 클릭해 보세요</p>
+	<script>
+		let $heading = document.getElementById("head");
+		function changeColor(){
+			$heading.style.color="red";
+	}
+	</script>
+</body>
+</html>

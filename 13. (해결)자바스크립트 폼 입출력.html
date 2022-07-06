@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport content"width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		#msg {
+			border: 2px solid cornflowerblue;
+			margin-top: 20px;
+			padding: 20px;
+			width: 300px;
+			height: 100;
+			box-sizing: border-box;
+			background-color: antiquewhite;
+		}
+	</style>
+</head>
+<body>
+	<h1>Javascript 연습</h1>
+	<form action="">
+		<input type="text" id="txt1">
+		<input type="button" value="확인" onclick="hello()">
+		<input type="reset" value="취소" onclick="cc()">
+	</form>
+	<div id="msg"></div>
+	<script>
+		let $msgDiv=document.getElementById("msg");
+		function hello(){
+			$msgDiv.textContent=txt1.value;
+		}
+		function cc(){
+			$msgDiv.textContent="";
+			txt1.focus();
+
+	</script>
+</body>
+</html>

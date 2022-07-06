@@ -1,0 +1,27 @@
+<head>
+	<style>
+		h2{background-color:lightblue;}
+		#demo{color:blue;
+            border: 1px solid #ccc;
+            background-color: lightcoral;
+        }
+	</style>
+</head>
+<body>
+	<h2>JavaScript 템플릿 문자열</h2>
+	<p>템플릿 문자열은 문자열 내에 변수와 표현식을 허용한다.</p>
+	<p id="demo"></p>
+	<script>
+		let $demoP = document.getElementById("demo");
+
+        let tags = ["Literals Template", "문자열 템플릿", "백틱구문"];
+        $demoP.innerHTML = tags;
+        let html = "";
+        for(let i=0; i<tags.length; i++){
+           // html += ("<li>" + tags[i] + "</li>");
+           html += `<li>${tags[i]}$</li>`;
+        }
+        $demoP.innerHTML = html;
+
+	</script>
+</body>
